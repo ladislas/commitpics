@@ -1,11 +1,11 @@
 ### GENERAL SETTINGS ###
 
 # Site settings
-title: SOLID.
+title: Ladislas' Commit Pics
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
-baseurl: "" /commitpic
-url: "ladislas.github.io"
+baseurl: "/commitpic"
+url: "http://ladislas.github.io"
 
 # Build settings
 markdown: kramdown
