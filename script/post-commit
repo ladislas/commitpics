@@ -6,4 +6,4 @@ if [ ! -d "$COMMIT_PICS_DIR"  ]; then
 	git clone -b gh-pages https://github.com/ladislas/commitpics ~/.git-commitpics
 fi
 
-imagesnap ~/.git-commitpics/img/$(date +%y%m%d%H%M%S)-${PWD##*/}.png -w 1
+imagesnap ~/.git-commitpics/assets/img/$(date +%y%m%d%H%M%S)-${PWD##*/}.png -w 1
