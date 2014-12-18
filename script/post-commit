@@ -1,0 +1,9 @@
+#!/bin/zsh
+
+COMMIT_PICS_DIR="~/.git-commitpics"
+
+if [ ! -d "$COMMIT_PICS_DIR"  ]; then
+	git clone -b gh-pages https://github.com/ladislas/commitpics ~/.git-commitpics
+fi
+
+imagesnap ~/.git-commitpics/img/$(date +%y%m%d%H%M%S)-${PWD##*/}.png -w 1
