@@ -2,7 +2,7 @@
 
 # Site settings
 title: Ladislas' Commit Pics
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+description: "Commiting is the art of the developer. Now, you can keep a trace of every face you made will working on your projects."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "/commitpics"
 url: "http://ladislas.github.io"
@@ -43,8 +43,8 @@ address:
     - Some Ave, 987,
     - 23890, New York,
     - United States.
-email: hello@solidtheme.com
-tel: +34 8493-4893
+email: ladislas@weareleka.com
+tel: +33 (0)6 28 32 37 07
 
 
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
