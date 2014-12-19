@@ -1,17 +1,15 @@
 #!/bin/zsh
 
-COMMIT_PICS_DIR=$(realpath ~/.git-commitpics)
-
-if [ ! -d $COMMIT_PICS_DIR ]; then
-	echo "Hello World!"
-	git clone -b gh-pages https://github.com/ladislas/commitpics ~/.git-commitpics
-fi
-
+COMMIT_PICS_PATH=$(realpath $PWD)
+COMMIT_IMG_DIR="$COMMIT_PICS_PATH/assets/img/commit"
 IMAGE_NAME="$(date +%y%m%d%H%M%S)-${PWD##*/}"
+COLORATION_SCRIPT="$COMMIT_PICS_PATH/script/coloration"
 HUE=$(($(date +%S)*359/59))
 
+echo $COMMIT_PICS_PATH
+echo $COMMIT_IMG_DIR
 echo $IMAGE_NAME
+echo $COLORATION_SCRIPT
 
-imagesnap $COMMIT_PICS_DIR/assets/img/$IMAGE_NAME.jpg -q -w 1
-
-$(realpath ../../script/coloration) -h $HUE -s 75 -l 0 $COMMIT_PICS_DIR/assets/img/$IMAGE_NAME.jpg $COMMIT_PICS_DIR/assets/img/$IMAGE_NAME.jpg
+imagesnap $COMMIT_IMG_DIR/$IMAGE_NAME.jpg -q -w 1
+eval "$COLORATION_SCRIPT" -h $HUE -s 75 -l 0 $COMMIT_IMG_DIR/$IMAGE_NAME.jpg $COMMIT_IMG_DIR/$IMAGE_NAME.jpg
