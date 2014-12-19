@@ -1,9 +1,17 @@
 #!/bin/zsh
 
-COMMIT_PICS_DIR="~/.git-commitpics"
+COMMIT_PICS_DIR=$(realpath ~/.git-commitpics)
 
-if [ ! -d "$COMMIT_PICS_DIR"  ]; then
+if [ ! -d $COMMIT_PICS_DIR ]; then
+	echo "Hello World!"
 	git clone -b gh-pages https://github.com/ladislas/commitpics ~/.git-commitpics
 fi
 
-imagesnap ~/.git-commitpics/assets/img/$(date +%y%m%d%H%M%S)-${PWD##*/}.png -w 1
+IMAGE_NAME=$(date +%y%m%d%H%M%S)-${PWD##*/}
+HUE=$(($(date +%S)*359/59))
+
+echo $HUE
+
+imagesnap $COMMIT_PICS_DIR/assets/img/$IMAGE_NAME.jpg -q -w 1
+
+./coloration -h $HUE -s 75 -l 0 $COMMIT_PICS_DIR/assets/img/$IMAGE_NAME.jpg $COMMIT_PICS_DIR/assets/img/$IMAGE_NAME.jpg
