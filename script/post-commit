@@ -6,10 +6,10 @@ IMAGE_NAME="$(date +%y%m%d%H%M%S)-${PWD##*/}"
 COLORATION_SCRIPT="$COMMIT_PICS_PATH/script/coloration"
 HUE=$(($(date +%S)*359/59))
 
-echo $COMMIT_PICS_PATH
-echo $COMMIT_IMG_DIR
-echo $IMAGE_NAME
-echo $COLORATION_SCRIPT
+# echo $COMMIT_PICS_PATH
+# echo $COMMIT_IMG_DIR
+# echo $IMAGE_NAME
+# echo $COLORATION_SCRIPT
 
 imagesnap $COMMIT_IMG_DIR/$IMAGE_NAME.jpg -q -w 1
 eval "$COLORATION_SCRIPT" -h $HUE -s 75 -l 0 $COMMIT_IMG_DIR/$IMAGE_NAME.jpg $COMMIT_IMG_DIR/$IMAGE_NAME.jpg

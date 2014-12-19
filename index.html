@@ -3,57 +3,57 @@ layout: index
 title: Home
 permalink: /
 ---
+<!--  -->
+<!-- <div id="service"> -->
+<!--     <div class="container"> -->
+<!--         <div class="row centered"> -->
+<!--             <div class="col&#45;md&#45;4"> -->
+<!--                 <i class="fa fa&#45;heart&#45;o"></i> -->
+<!--                 <h4>Handsomely Crafted</h4> -->
+<!--                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> -->
+<!--                 <p><br/><a href="#" class="btn btn&#45;theme">More Info</a></p> -->
+<!--             </div> -->
+<!--             <div class="col&#45;md&#45;4"> -->
+<!--                 <i class="fa fa&#45;flask"></i> -->
+<!--                 <h4>Retina Ready</h4> -->
+<!--                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> -->
+<!--                 <p><br/><a href="#" class="btn btn&#45;theme">More Info</a></p> -->
+<!--             </div> -->
+<!--             <div class="col&#45;md&#45;4"> -->
+<!--                 <i class="fa fa&#45;trophy"></i> -->
+<!--                 <h4>Quality Theme</h4> -->
+<!--                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> -->
+<!--                 <p><br/><a href="#" class="btn btn&#45;theme">More Info</a></p> -->
+<!--             </div>		 				 -->
+<!--         </div> -->
+<!--     </div><! &#45;&#45;/container &#45;&#45;> -->
+<!-- </div><! &#45;&#45;/service &#45;&#45;> -->
 
-<div id="service">
-    <div class="container">
-        <div class="row centered">
-            <div class="col-md-4">
-                <i class="fa fa-heart-o"></i>
-                <h4>Handsomely Crafted</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-flask"></i>
-                <h4>Retina Ready</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-trophy"></i>
-                <h4>Quality Theme</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-            </div>		 				
-        </div>
-    </div><! --/container -->
-</div><! --/service -->
-
-{% include portfolio.html title="LATEST WORKS" limit=10 %}
-
-<div class="container mtb">
-    <div class="row">
-        <div class="col-lg-4 col-lg-offset-1">
-            <h4>More About Our Agency.</h4>
-            <p>{{ site.about }}</p>
-            <p><br/><a href="{{ "/about/" | prepend: site.baseurl }}" class="btn btn-theme">More Info</a></p>
-        </div>
-
-        <div class="col-lg-3">
-            <h4>Frequently Asked</h4>
-            <div class="hline"></div>
-            {% for post in site.categories['question'] %} 
-                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
-            {% endfor %}
-        </div>
-
-        <div class="col-lg-3">
-            <h4>Latest Posts</h4>
-            <div class="hline"></div>
-            {% for post in site.categories['blog'] limit:5 %} 
-                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}.</a></p>
-            {% endfor %} 
-        </div>
-
-    </div><! --/row -->
-</div><! --/container -->
+{% include portfolio.html title="Latest Commits" limit=50 %}
+<!--  -->
+<!-- <div class="container mtb"> -->
+<!--     <div class="row"> -->
+<!--         <div class="col&#45;lg&#45;4 col&#45;lg&#45;offset&#45;1"> -->
+<!--             <h4>More About Our Agency.</h4> -->
+<!--             <p>{{ site.about }}</p> -->
+<!--             <p><br/><a href="{{ "/about/" | prepend: site.baseurl }}" class="btn btn&#45;theme">More Info</a></p> -->
+<!--         </div> -->
+<!--  -->
+<!--         <div class="col&#45;lg&#45;3"> -->
+<!--             <h4>Frequently Asked</h4> -->
+<!--             <div class="hline"></div> -->
+<!--             {% for post in site.categories['question'] %}  -->
+<!--                 <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p> -->
+<!--             {% endfor %} -->
+<!--         </div> -->
+<!--  -->
+<!--         <div class="col&#45;lg&#45;3"> -->
+<!--             <h4>Latest Posts</h4> -->
+<!--             <div class="hline"></div> -->
+<!--             {% for post in site.categories['blog'] limit:5 %}  -->
+<!--                 <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}.</a></p> -->
+<!--             {% endfor %}  -->
+<!--         </div> -->
+<!--  -->
+<!--     </div><! &#45;&#45;/row &#45;&#45;> -->
+<!-- </div><! &#45;&#45;/container &#45;&#45;> -->
