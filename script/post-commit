@@ -7,11 +7,11 @@ if [ ! -d $COMMIT_PICS_DIR ]; then
 	git clone -b gh-pages https://github.com/ladislas/commitpics ~/.git-commitpics
 fi
 
-IMAGE_NAME=$(date +%y%m%d%H%M%S)-${PWD##*/}
+IMAGE_NAME="$(date +%y%m%d%H%M%S)-${PWD##*/}"
 HUE=$(($(date +%S)*359/59))
 
-echo $HUE
+echo $IMAGE_NAME
 
 imagesnap $COMMIT_PICS_DIR/assets/img/$IMAGE_NAME.jpg -q -w 1
 
-./coloration -h $HUE -s 75 -l 0 $COMMIT_PICS_DIR/assets/img/$IMAGE_NAME.jpg $COMMIT_PICS_DIR/assets/img/$IMAGE_NAME.jpg
+$(realpath ../../script/coloration) -h $HUE -s 75 -l 0 $COMMIT_PICS_DIR/assets/img/$IMAGE_NAME.jpg $COMMIT_PICS_DIR/assets/img/$IMAGE_NAME.jpg
