@@ -1,18 +1,17 @@
 <div id="headerwrap">
 	<div class="container">
 		<div class="row">
+			{% for commit in site.categories['commit'] limit:1 %}
 			<div class="col-lg-8 col-lg-offset-2">
 				<h3>Never forget...</h3>
-				<h1>My Latest Commit Pic</h1>
-				<h5>Hash: 49174698340</h5>
-				<h5>Date: 19/12/2014</h5>
-				<h5>Message: Initial Commit</h5>
+				<h1>Hash: {{ commit.title }}</h1>
+				<h5>Date: {{ commit.date }}</h5>
+				<h5>Message: {{ commit.message }}</h5>
 			</div>
 			<div class="col-lg-8 col-lg-offset-2 himg">
-				{% for commit in site.categories['commit'] limit:1 %}
 				<img src="{{ "/assets/img/commit/" | prepend: site.baseurl | append: commit.img }}" class="img-responsive">
-				{% endfor %}
 			</div>
+			{% endfor %}
 		</div><!--/row -->
 	</div> <!--/container -->
 </div><!--/headerwrap -->
