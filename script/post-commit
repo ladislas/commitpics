@@ -1,15 +1,51 @@
 #!/bin/zsh
 
+# Set global variables & path
 COMMIT_PICS_PATH=$(realpath $PWD)
 COMMIT_IMG_DIR="$COMMIT_PICS_PATH/assets/img/commit"
-IMAGE_NAME="$(date +%y%m%d%H%M%S)-${PWD##*/}"
+COMMIT_POST_DIR="$COMMIT_PICS_PATH/_posts/commit"
 COLORATION_SCRIPT="$COMMIT_PICS_PATH/script/coloration"
+NOW=$(date +"%Y-%m-%d-%k%M%S")
+
+# Get commit info
+COMMIT_HASH=$(git log -1 --pretty="%h")
+COMMIT_HASH_LONG=$(git log -1 --pretty="%H")
+COMMIT_AUTHOR=$(git log -1 --pretty="%an \"%ae\"")
+COMMIT_DATE=$(git log -1 --pretty="%ad")
+COMMIT_MESSAGE=$(git log -1 --pretty="%s")
+COMMIT_REPOSITORY=$(git config --get remote.origin.url)
+COMMIT_BRANCH=$(git symbolic-ref --short HEAD)
+COMMIT_PICTURE="$NOW-${PWD##*/}-$COMMIT_HASH"
+COMMIT_POST="$COMMIT_PICTURE.markdown"
+
+# Take picture - wait for 1 second to allow better lightning
+imagesnap $COMMIT_IMG_DIR/$COMMIT_PICTURE.jpg -q -w 1
+
+# Colorize picture based on number of seconds in the current minute
 HUE=$(($(date +%S)*359/59))
+eval "$COLORATION_SCRIPT" -h $HUE -s 75 -l 0 $COMMIT_IMG_DIR/$COMMIT_PICTURE.jpg $COMMIT_IMG_DIR/$COMMIT_PICTURE.jpg
 
-# echo $COMMIT_PICS_PATH
-# echo $COMMIT_IMG_DIR
-# echo $IMAGE_NAME
-# echo $COLORATION_SCRIPT
+# Create post
+touch $COMMIT_POST_DIR/$COMMIT_POST
 
-imagesnap $COMMIT_IMG_DIR/$IMAGE_NAME.jpg -q -w 1
-eval "$COLORATION_SCRIPT" -h $HUE -s 75 -l 0 $COMMIT_IMG_DIR/$IMAGE_NAME.jpg $COMMIT_IMG_DIR/$IMAGE_NAME.jpg
+# Write content to post
+echo \
+"---
+layout: commit
+title:  \"$COMMIT_HASH\"
+date:   $(date +"%Y-%m-%d %k:%M:%S")
+author: $COMMIT_AUTHOR
+categories:
+- commit
+img: $COMMIT_PICTURE.jpg
+hash: $COMMIT_HASH_LONG
+date: $COMMIT_DATE
+message: $COMMIT_MESSAGE
+repository: $COMMIT_REPOSITORY
+branch: $COMMIT_BRANCH
+---
+
+~~~diff
+$(git log -1 --stat)
+~~~" >> $COMMIT_POST_DIR/$COMMIT_POST
+
