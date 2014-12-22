@@ -9,7 +9,9 @@
 				<h5>Message: Initial Commit</h5>
 			</div>
 			<div class="col-lg-8 col-lg-offset-2 himg">
-				<img src="{{ "/assets/img/commit/141219143231-commitpics.jpg" | prepend: site.baseurl }}" class="img-responsive">
+				{% for commit in site.categories['commit'] limit:1 %}
+				<img src="{{ "/assets/img/commit/" | prepend: site.baseurl | append: commit.img }}" class="img-responsive">
+				{% endfor %}
 			</div>
 		</div><!--/row -->
 	</div> <!--/container -->
