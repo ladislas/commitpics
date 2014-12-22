@@ -1,0 +1,28 @@
+---
+layout: commit
+title:  "f0cbb02"
+date:   2014-12-22 20:46:47
+author: Ladislas "ladislas@weareleka.com"
+categories:
+- commit
+img: 2014-12-22-204645-commitpics-f0cbb02.jpg
+hash: f0cbb0207926e8c5518b0262799c5ca951c9fd8c
+date: Mon Dec 22 20:46:45 2014 +0100
+message: index and commit page are now up and running
+repository: https://github.com/ladislas/commitpics
+branch: gh-pages
+---
+
+~~~diff
+commit f0cbb0207926e8c5518b0262799c5ca951c9fd8c
+Author: Ladislas <ladislas@weareleka.com>
+Date:   Mon Dec 22 20:46:45 2014 +0100
+
+    index and commit page are now up and running
+
+ _includes/commit.html                    | 21 ---------------------
+ _posts/commit/2014-12-19-commit.markdown | 22 ----------------------
+ commit.html                              |  2 +-
+ index.html                               |  2 +-
+ 4 files changed, 2 insertions(+), 45 deletions(-)
+~~~

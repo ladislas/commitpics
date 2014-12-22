@@ -1,0 +1,25 @@
+---
+layout: commit
+title:  "81fcdc0"
+date:   2014-12-22 20:50:01
+author: Ladislas "ladislas@weareleka.com"
+categories:
+- commit
+img: 2014-12-22-204959-commitpics-81fcdc0.jpg
+hash: 81fcdc0d0fbb6d7016df324610f4793d8b98f4b0
+date: Mon Dec 22 20:49:59 2014 +0100
+message: update landing page to display good information about commit
+repository: https://github.com/ladislas/commitpics
+branch: gh-pages
+---
+
+~~~diff
+commit 81fcdc0d0fbb6d7016df324610f4793d8b98f4b0
+Author: Ladislas <ladislas@weareleka.com>
+Date:   Mon Dec 22 20:49:59 2014 +0100
+
+    update landing page to display good information about commit
+
+ _includes/header.html | 11 +++++------
+ 1 file changed, 5 insertions(+), 6 deletions(-)
+~~~

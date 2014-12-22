@@ -1,0 +1,25 @@
+---
+layout: commit
+title:  "6113759"
+date:   2014-12-22 20:46:16
+author: Ladislas "ladislas@weareleka.com"
+categories:
+- commit
+img: 2014-12-22-204614-commitpics-6113759.jpg
+hash: 6113759580af3031cf32e29aaecf6897f09cdb9c
+date: Mon Dec 22 20:46:14 2014 +0100
+message: script now gets all the commit info and generates a new post each time
+repository: https://github.com/ladislas/commitpics
+branch: gh-pages
+---
+
+~~~diff
+commit 6113759580af3031cf32e29aaecf6897f09cdb9c
+Author: Ladislas <ladislas@weareleka.com>
+Date:   Mon Dec 22 20:46:14 2014 +0100
+
+    script now gets all the commit info and generates a new post each time
+
+ script/post-commit | 50 +++++++++++++++++++++++++++++++++++++++++++-------
+ 1 file changed, 43 insertions(+), 7 deletions(-)
+~~~

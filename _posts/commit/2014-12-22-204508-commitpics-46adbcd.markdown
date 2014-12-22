@@ -1,0 +1,27 @@
+---
+layout: commit
+title:  "46adbcd"
+date:   2014-12-22 20:45:11
+author: Ladislas "ladislas@weareleka.com"
+categories:
+- commit
+img: 2014-12-22-204508-commitpics-46adbcd.jpg
+hash: 46adbcdbed157462cd4712a397f2d2b92a07d764
+date: Mon Dec 22 20:45:08 2014 +0100
+message: fixed image references to display in index and portfolio
+repository: https://github.com/ladislas/commitpics
+branch: gh-pages
+---
+
+~~~diff
+commit 46adbcdbed157462cd4712a397f2d2b92a07d764
+Author: Ladislas <ladislas@weareleka.com>
+Date:   Mon Dec 22 20:45:08 2014 +0100
+
+    fixed image references to display in index and portfolio
+
+ _includes/commitpic.html | 4 ++--
+ _includes/header.html    | 4 +++-
+ _includes/nav.html       | 2 +-
+ 3 files changed, 6 insertions(+), 4 deletions(-)
+~~~
