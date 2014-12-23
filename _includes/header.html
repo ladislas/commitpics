@@ -1,7 +1,7 @@
 <div id="headerwrap">
 	<div class="container">
 		<div class="row">
-			{% for commit in site.categories['commit'] limit:1 %}
+			{% for commit in site.posts limit:1 %}
 			<div class="col-lg-8 col-lg-offset-2">
 				<h3>Never forget...</h3>
 				<h1>Hash: {{ commit.title }}</h1>
