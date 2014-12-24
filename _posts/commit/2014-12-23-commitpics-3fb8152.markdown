@@ -1,0 +1,32 @@
+---
+layout: commit
+title:  "3fb8152"
+date:   Tue Dec 23 18:39:25 2014
+author: Ladislas
+email:  ladislas@weareleka.com
+categories:
+- Ladislas
+- ladislas/commitpics
+- evening
+- Tuesday
+- December
+- 2014
+img: 2014-12-23-commitpics-3fb8152.jpg
+hash: 3fb8152eed2abff40c7b01dfbca03d0428d89c3b
+commitdate: Tue Dec 23 18:39:22 2014 +0100
+message: add readme to keep track of the folder
+repository: ladislas/commitpics
+url: https://github.com/ladislas/commitpics
+branch: gh-pages
+---
+
+~~~diff
+commit 3fb8152eed2abff40c7b01dfbca03d0428d89c3b
+Author: Ladislas <ladislas@weareleka.com>
+Date:   Tue Dec 23 18:39:22 2014 +0100
+
+    add readme to keep track of the folder
+
+ _posts/commit/README.md | 5 +++++
+ 1 file changed, 5 insertions(+)
+~~~

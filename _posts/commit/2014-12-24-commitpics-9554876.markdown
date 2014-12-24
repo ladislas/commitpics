@@ -1,0 +1,43 @@
+---
+layout: commit
+
+title:  "9554876"
+date:   Wed Dec 24 12:52:48 2014
+
+author: Ladislas
+email:  ladislas@weareleka.com
+
+img: 2014-12-24-commitpics-9554876.jpg
+hash: 9554876cfd1563ce04b8276b4ab8192ceed5d642
+commitdate: Wed Dec 24 12:52:44 2014 +0100
+message: add geotag to hook post commit script and generate thumbnails
+repository: ladislas/commitpics
+url: https://github.com/ladislas/commitpics
+branch: gh-pages
+
+latitude: 48.874
+longitude: 1.881
+city: Poissy
+country: France
+
+categories:
+- Ladislas
+- ladislas/commitpics
+- midday
+- Wednesday
+- December
+- 2014
+- Poissy
+- France
+---
+
+~~~diff
+commit 9554876cfd1563ce04b8276b4ab8192ceed5d642
+Author: Ladislas <ladislas@weareleka.com>
+Date:   Wed Dec 24 12:52:44 2014 +0100
+
+    add geotag to hook post commit script and generate thumbnails
+
+ script/post-commit.sh | 45 ++++++++++++++++++++++++++++++++++++---------
+ 1 file changed, 36 insertions(+), 9 deletions(-)
+~~~

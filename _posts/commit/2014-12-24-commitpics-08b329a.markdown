@@ -1,0 +1,43 @@
+---
+layout: commit
+
+title:  "08b329a"
+date:   Wed Dec 24 14:18:07 2014
+
+author: Ladislas
+email:  ladislas@weareleka.com
+
+img: 2014-12-24-commitpics-08b329a.jpg
+hash: 08b329af207aa1114decca34546d37fa22fc75c8
+commitdate: Wed Dec 24 14:17:59 2014 +0100
+message: fix thumbnails links for catefory page
+repository: ladislas/commitpics
+url: https://github.com/ladislas/commitpics
+branch: gh-pages
+
+latitude: n/a
+longitude: n/a
+city: n/a
+country: n/a
+
+categories:
+- Ladislas
+- ladislas/commitpics
+- afternoon
+- Wednesday
+- December
+- 2014
+- n/a
+- n/a
+---
+
+~~~diff
+commit 08b329af207aa1114decca34546d37fa22fc75c8
+Author: Ladislas <ladislas@weareleka.com>
+Date:   Wed Dec 24 14:17:59 2014 +0100
+
+    fix thumbnails links for catefory page
+
+ category.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+~~~

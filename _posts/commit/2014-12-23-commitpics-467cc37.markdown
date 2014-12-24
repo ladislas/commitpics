@@ -1,0 +1,33 @@
+---
+layout: commit
+title:  "467cc37"
+date:   Tue Dec 23 19:31:05 2014
+author: Ladislas
+email:  ladislas@weareleka.com
+categories:
+- Ladislas
+- ladislas/commitpics
+- evening
+- Tuesday
+- December
+- 2014
+img: 2014-12-23-commitpics-467cc37.jpg
+hash: 467cc37b373ee1ff847d8d624782ca117bbbb94d
+commitdate: Tue Dec 23 19:31:03 2014 +0100
+message: get commit from posts on header and portfolio
+repository: ladislas/commitpics
+url: https://github.com/ladislas/commitpics
+branch: gh-pages
+---
+
+~~~diff
+commit 467cc37b373ee1ff847d8d624782ca117bbbb94d
+Author: Ladislas <ladislas@weareleka.com>
+Date:   Tue Dec 23 19:31:03 2014 +0100
+
+    get commit from posts on header and portfolio
+
+ _includes/commit-portfolio.html | 2 +-
+ _includes/header.html           | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+~~~

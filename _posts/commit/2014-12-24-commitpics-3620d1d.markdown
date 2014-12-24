@@ -1,0 +1,56 @@
+---
+layout: commit
+
+title:  "3620d1d"
+date:   Wed Dec 24 12:44:44 2014
+
+author: Ladislas
+email:  ladislas@weareleka.com
+
+img: 2014-12-24-commitpics-3620d1d.jpg
+hash: 3620d1d55b785c4f1db8987bc38694ecf12e1be8
+commitdate: Wed Dec 24 11:23:48 2014 +0100
+message: delete blog, project and question posts
+repository: ladislas/commitpics
+url: https://github.com/ladislas/commitpics
+branch: gh-pages
+
+latitude: 48.874
+longitude: 1.881
+city: Poissy
+country: France
+
+categories:
+- Ladislas
+- ladislas/commitpics
+- midday
+- Wednesday
+- December
+- 2014
+- Poissy
+- France
+---
+
+~~~diff
+commit 3620d1d55b785c4f1db8987bc38694ecf12e1be8
+Author: Ladislas <ladislas@weareleka.com>
+Date:   Wed Dec 24 11:23:48 2014 +0100
+
+    delete blog, project and question posts
+
+ ...4-04-25-logo-design-contest-starts-now.markdown | 31 ----------------------
+ .../blog/2014-04-25-our-new-logo-is-here.markdown  | 31 ----------------------
+ .../2014-04-25-time-to-change-your-apps.markdown   | 31 ----------------------
+ .../project/2014-04-15-your-project-name.markdown  | 24 -----------------
+ .../project/2014-04-16-your-project-name.markdown  | 21 ---------------
+ .../project/2014-04-17-your-project-name.markdown  | 21 ---------------
+ .../project/2014-04-18-your-project-name.markdown  | 21 ---------------
+ .../project/2014-04-19-your-project-name.markdown  | 21 ---------------
+ .../project/2014-04-20-your-project-name.markdown  | 21 ---------------
+ .../project/2014-04-21-your-project-name.markdown  | 21 ---------------
+ .../project/2014-04-22-your-project-name.markdown  | 21 ---------------
+ .../project/2014-04-23-your-project-name.markdown  | 21 ---------------
+ .../project/2014-04-25-your-project-name.markdown  | 20 --------------
+ .../question/2014-04-15-your-project-name.markdown |  9 -------
+ 14 files changed, 314 deletions(-)
+~~~
