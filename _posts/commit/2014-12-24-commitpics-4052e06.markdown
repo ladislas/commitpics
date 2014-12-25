@@ -1,0 +1,53 @@
+---
+layout: commit
+
+title:  "4052e06"
+date:   Wed Dec 24 15:40:21 2014
+
+author: Ladislas
+email:  ladislas@weareleka.com
+
+img: 2014-12-24-commitpics-4052e06.jpg
+hash: 4052e06eb6184c92f2e4455556a0d3b6b2dc8138
+commitdate: Wed Dec 24 15:39:10 2014 +0100
+message: format files in _layouts
+repository: ladislas/commitpics
+url: https://github.com/ladislas/commitpics
+branch: gh-pages
+
+latitude: n/a
+longitude: n/a
+city: n/a
+country: n/a
+
+categories:
+- Ladislas
+- ladislas/commitpics
+- afternoon
+- Wednesday
+- December
+- 2014
+- n/a
+- n/a
+---
+
+~~~diff
+commit 4052e06eb6184c92f2e4455556a0d3b6b2dc8138
+Author: Ladislas <ladislas@weareleka.com>
+Date:   Wed Dec 24 15:39:10 2014 +0100
+
+    format files in _layouts
+
+ _layouts/about.html            |  4 ++--
+ _layouts/blog.html             |  5 +++--
+ _layouts/commit-portfolio.html |  2 +-
+ _layouts/commit.html           |  2 +-
+ _layouts/contact.html          |  3 ++-
+ _layouts/default.html          | 16 ++++++++--------
+ _layouts/index.html            |  2 +-
+ _layouts/portfolio.html        |  2 +-
+ _layouts/post.html             | 10 +++++-----
+ _layouts/project.html          | 34 +++++++++++++++++-----------------
+ _layouts/question.html         | 38 +++++++++++++++++++-------------------
+ 11 files changed, 60 insertions(+), 58 deletions(-)
+~~~

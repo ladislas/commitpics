@@ -1,0 +1,45 @@
+---
+layout: commit
+
+title:  "7199c0f"
+date:   Wed Dec 24 15:35:45 2014
+
+author: Ladislas
+email:  ladislas@weareleka.com
+
+img: 2014-12-24-commitpics-7199c0f.jpg
+hash: 7199c0f0288ce6be40e4be3342befc9425b5e149
+commitdate: Wed Dec 24 15:35:36 2014 +0100
+message: format files in _includes
+repository: ladislas/commitpics
+url: https://github.com/ladislas/commitpics
+branch: gh-pages
+
+latitude: n/a
+longitude: n/a
+city: n/a
+country: n/a
+
+categories:
+- Ladislas
+- ladislas/commitpics
+- afternoon
+- Wednesday
+- December
+- 2014
+- n/a
+- n/a
+---
+
+~~~diff
+commit 7199c0f0288ce6be40e4be3342befc9425b5e149
+Author: Ladislas <ladislas@weareleka.com>
+Date:   Wed Dec 24 15:35:36 2014 +0100
+
+    format files in _includes
+
+ _includes/carousel.html         |  50 ++++++++--------
+ _includes/commit-portfolio.html |   2 +-
+ _includes/js.html               | 124 ++++++++++++++++++++--------------------
+ 3 files changed, 88 insertions(+), 88 deletions(-)
+~~~

@@ -1,0 +1,72 @@
+---
+layout: commit
+
+title:  "621e858"
+date:   Wed Dec 24 14:19:20 2014
+
+author: Ladislas
+email:  ladislas@weareleka.com
+
+img: 2014-12-24-commitpics-621e858.jpg
+hash: 621e858304cc1ab45ac3567a3e7a51630161daa2
+commitdate: Wed Dec 24 14:19:13 2014 +0100
+message: add all images to push to github
+repository: ladislas/commitpics
+url: https://github.com/ladislas/commitpics
+branch: gh-pages
+
+latitude: n/a
+longitude: n/a
+city: n/a
+country: n/a
+
+categories:
+- Ladislas
+- ladislas/commitpics
+- afternoon
+- Wednesday
+- December
+- 2014
+- n/a
+- n/a
+---
+
+~~~diff
+commit 621e858304cc1ab45ac3567a3e7a51630161daa2
+Author: Ladislas <ladislas@weareleka.com>
+Date:   Wed Dec 24 14:19:13 2014 +0100
+
+    add all images to push to github
+
+ .../commit/2014-12-23-commitpics-3fb8152.markdown  |  32 ++++++++++++
+ .../commit/2014-12-23-commitpics-467cc37.markdown  |  33 ++++++++++++
+ .../commit/2014-12-23-commitpics-9baef6b.markdown  |  32 ++++++++++++
+ .../commit/2014-12-23-commitpics-ae5d5a4.markdown  |  45 +++++++++++++++++
+ .../commit/2014-12-23-commitpics-b1d75ec.markdown  |  32 ++++++++++++
+ .../commit/2014-12-23-commitpics-d0bcea6.markdown  |  32 ++++++++++++
+ .../commit/2014-12-23-commitpics-d3eee50.markdown  |  36 +++++++++++++
+ .../commit/2014-12-24-commitpics-08b329a.markdown  |  43 ++++++++++++++++
+ .../commit/2014-12-24-commitpics-3620d1d.markdown  |  56 +++++++++++++++++++++
+ .../commit/2014-12-24-commitpics-9554876.markdown  |  43 ++++++++++++++++
+ .../img/commit/2014-12-23-commitpics-3fb8152.jpg   | Bin 0 -> 100262 bytes
+ .../img/commit/2014-12-23-commitpics-467cc37.jpg   | Bin 0 -> 78408 bytes
+ .../img/commit/2014-12-23-commitpics-9baef6b.jpg   | Bin 0 -> 112101 bytes
+ .../img/commit/2014-12-23-commitpics-ae5d5a4.jpg   | Bin 0 -> 99483 bytes
+ .../img/commit/2014-12-23-commitpics-b1d75ec.jpg   | Bin 0 -> 98713 bytes
+ .../img/commit/2014-12-23-commitpics-d0bcea6.jpg   | Bin 0 -> 80743 bytes
+ .../img/commit/2014-12-23-commitpics-d3eee50.jpg   | Bin 0 -> 96384 bytes
+ .../img/commit/2014-12-24-commitpics-08b329a.jpg   | Bin 0 -> 75123 bytes
+ .../img/commit/2014-12-24-commitpics-3620d1d.jpg   | Bin 0 -> 87417 bytes
+ .../img/commit/2014-12-24-commitpics-9554876.jpg   | Bin 0 -> 87125 bytes
+ .../thumbs/2014-12-23-commitpics-3fb8152.jpg       | Bin 0 -> 6282 bytes
+ .../thumbs/2014-12-23-commitpics-467cc37.jpg       | Bin 0 -> 6523 bytes
+ .../thumbs/2014-12-23-commitpics-9baef6b.jpg       | Bin 0 -> 6318 bytes
+ .../thumbs/2014-12-23-commitpics-ae5d5a4.jpg       | Bin 0 -> 6280 bytes
+ .../thumbs/2014-12-23-commitpics-b1d75ec.jpg       | Bin 0 -> 6274 bytes
+ .../thumbs/2014-12-23-commitpics-d0bcea6.jpg       | Bin 0 -> 6518 bytes
+ .../thumbs/2014-12-23-commitpics-d3eee50.jpg       | Bin 0 -> 6344 bytes
+ .../thumbs/2014-12-24-commitpics-08b329a.jpg       | Bin 0 -> 6444 bytes
+ .../thumbs/2014-12-24-commitpics-3620d1d.jpg       | Bin 0 -> 6509 bytes
+ .../thumbs/2014-12-24-commitpics-9554876.jpg       | Bin 0 -> 6587 bytes
+ 30 files changed, 384 insertions(+)
+~~~
