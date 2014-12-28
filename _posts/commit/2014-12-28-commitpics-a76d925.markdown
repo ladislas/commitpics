@@ -1,0 +1,43 @@
+---
+layout: commit
+
+title:  "a76d925"
+date:   Sun Dec 28 12:49:17 2014
+
+author: Ladislas
+email:  ladislas@weareleka.com
+
+img: 2014-12-28-commitpics-a76d925.jpg
+hash: a76d9256f7848632f9a532ccb2a588b93732167f
+commitdate: Sun Dec 28 12:48:50 2014 +0100
+message: create commitpics script to be executed in a separate process
+repository: ladislas/commitpics
+url: https://github.com/ladislas/commitpics
+branch: gh-pages
+
+latitude: n/a
+longitude: n/a
+city: n/a
+country: n/a
+
+categories:
+- Ladislas
+- ladislas/commitpics
+- midday
+- Sunday
+- December
+- 2014
+- n/a
+- n/a
+---
+
+~~~diff
+commit a76d9256f7848632f9a532ccb2a588b93732167f
+Author: Ladislas <ladislas@weareleka.com>
+Date:   Sun Dec 28 12:48:50 2014 +0100
+
+    create commitpics script to be executed in a separate process
+
+ script/commitpics.sh | 110 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 110 insertions(+)
+~~~

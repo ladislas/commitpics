@@ -1,0 +1,44 @@
+---
+layout: commit
+
+title:  "e74840c"
+date:   Sun Dec 28 12:38:16 2014
+
+author: Ladislas
+email:  ladislas@weareleka.com
+
+img: 2014-12-28-commitpics-e74840c.jpg
+hash: e74840c3f07c6405c81a51ca36e7bca341983442
+commitdate: Sun Dec 28 12:38:12 2014 +0100
+message: add ref to boostrap css and jquery js for offline dev
+repository: ladislas/commitpics
+url: https://github.com/ladislas/commitpics
+branch: gh-pages
+
+latitude: 46.675
+longitude: 5.556
+city: Lons-le-Saunier
+country: France
+
+categories:
+- Ladislas
+- ladislas/commitpics
+- midday
+- Sunday
+- December
+- 2014
+- Lons-le-Saunier
+- France
+---
+
+~~~diff
+commit e74840c3f07c6405c81a51ca36e7bca341983442
+Author: Ladislas <ladislas@weareleka.com>
+Date:   Sun Dec 28 12:38:12 2014 +0100
+
+    add ref to boostrap css and jquery js for offline dev
+
+ _includes/head.html | 2 +-
+ _includes/js.html   | 3 ++-
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+~~~
