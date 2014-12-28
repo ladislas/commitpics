@@ -7,7 +7,7 @@ COMMIT_IMG_DIR="$COMMIT_PICS_PATH/assets/img/commit"
 COMMIT_THUMB_DIR="$COMMIT_PICS_PATH/assets/img/commit/thumbs"
 COMMIT_POST_DIR="$COMMIT_PICS_PATH/_posts/commit"
 COLORATION_SCRIPT="$COMMIT_PICS_PATH/script/coloration"
-GITHUB_DOMAIN="https\:\/\/github.com"
+GITHUB_DOMAIN="https://github.com"
 
 # Set time of day
 NOW=$(date +"%F")
@@ -30,6 +30,10 @@ elif [ $(date +"%k") -le 23 ] ; then
 	TIME_OF_DAY="late evening"
 fi
 
+# Git variables
+GIT_LOCAL_USER_NAME=$(git config user.name)
+GIT_LOCAL_USER_EMAIL=$(git config user.email)
+
 # Get commit info
 COMMIT_HASH=$(git log -1 --pretty="%h")
 COMMIT_HASH_LONG=$(git log -1 --pretty="%H")
@@ -51,7 +55,6 @@ LATITUDE=$(echo $GEOTAG_RAW | sed -e "s/^.*\"latitude\":\(.*\)\,\"longitude.*/\1
 LONGITUDE=$(echo $GEOTAG_RAW | sed -e "s/^.*\"longitude\":\(.*\)\,\"metro.*/\1/")
 COUNTRY=$(echo $GEOTAG_RAW | sed -e "s/^.*\"country_name\":\"\(.*\)\"\,\"region_code.*/\1/")
 CITY=$(echo $GEOTAG_RAW | sed -e "s/^.*\"city\":\"\(.*\)\"\,\"zip.*/\1/")
-
 
 # Take picture - wait for 1 second to allow better lightning
 imagesnap $COMMIT_IMG_DIR/$COMMIT_PICTURE.jpg -q -w 1
@@ -107,4 +110,10 @@ categories:
 ~~~diff
 $(git log -1 --stat)
 ~~~" >> $COMMIT_POST_DIR/$COMMIT_POST
+
+# add all new files and commit
+cd $COMMIT_PICS_PATH
+git add --all
+git commit -am "add new commit pics for $COMMIT_AUTHOR_NAME working on $COMMIT_REPOSITORY - $COMMIT_HASH"
+git push origin gh-pages
 
